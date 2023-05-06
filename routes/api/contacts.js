@@ -6,10 +6,22 @@ const { HttpError } = require("../../helpers");
 const router = express.Router();
 
 const addSchema = Joi.object({
-  name: Joi.string().required(),
-  email: Joi.string().required(),
-  phone: Joi.string().required(),
+  name: Joi.string()
+    .required()
+    .messages({ "any.required": `missing required name field` }),
+  email: Joi.string()
+    .required()
+    .messages({ "any.required": `missing required email field` }),
+  phone: Joi.string()
+    .required()
+    .messages({ "any.required": `missing required phone field` }),
 });
+
+const updateSchema = Joi.object({
+  name: Joi.string(),
+  email: Joi.string(),
+  phone: Joi.string(),
+}).min(1);
 
 router.get("/", async (req, res, next) => {
   try {
@@ -37,7 +49,7 @@ router.post("/", async (req, res, next) => {
   try {
     const { error } = addSchema.validate(req.body);
     if (error) {
-      error.message = "missing required name field";
+      // error.message = "missing required name field";
       throw HttpError(400, error.message);
     }
     const result = await contacts.addContact(req.body);
@@ -64,7 +76,7 @@ router.delete("/:id", async (req, res, next) => {
 
 router.put("/:id", async (req, res, next) => {
   try {
-    const { error } = addSchema.validate(req.body);
+    const { error } = updateSchema.validate(req.body);
     if (error) {
       error.message = "missing fields";
       throw HttpError(400, error.message);
