@@ -1,31 +1,69 @@
-## GoIT Node.js Course Template Homework
+# nodejs-homework-rest-api
 
-Виконайте форк цього репозиторію для виконання домашніх завдань (2-6)
-Форк створить репозиторій на вашому http://github.com
+This project is a backend part of a REST-API intended to work with a collection of contacts. It was created by forking the [nodejs-homework-template](https://github.com/goitacademy/nodejs-homework-template) repository.
 
-Додайте ментора до колаборації
+## Table of Contents
 
-Для кожної домашньої роботи створюйте свою гілку.
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-- hw02
-- hw03
-- hw04
-- hw05
-- hw06
+## Installation
 
-Кожна нова гілка для др повинна робитися з master
+To install and run this project, please follow these steps:
 
-Після того, як ви закінчили виконувати домашнє завдання у своїй гілці, необхідно зробити пулл-реквест (PR). Потім додати ментора для рев'ю коду. Тільки після того, як ментор заапрувить PR, ви можете виконати мердж гілки з домашнім завданням у майстер.
+1. Clone this repository to your local machine
+2. Install the required dependencies using `npm install`
+3. Create a `.env` file in the root directory and add the necessary environment variables (e.g. `PORT`, `DB_HOST`, etc.)
+4. Run the server using `npm run start:dev`
 
-Уважно читайте коментарі ментора. Виправте зауваження та зробіть коміт у гілці з домашнім завданням. Зміни підтягнуться у PR автоматично після того, як ви відправите коміт з виправленнями на github
-Після виправлення знову додайте ментора на рев'ю коду.
+## Usage
 
-- При здачі домашньої роботи є посилання на PR
-- JS-код чистий та зрозумілий, для форматування використовується Prettier
+To use this project, you can send HTTP requests to the available endpoints using your preferred HTTP client, such as `curl` or `Postman`.
 
-### Команди:
+## Features
 
-- `npm start` &mdash; старт сервера в режимі production
-- `npm run start:dev` &mdash; старт сервера в режимі розробки (development)
-- `npm run lint` &mdash; запустити виконання перевірки коду з eslint, необхідно виконувати перед кожним PR та виправляти всі помилки лінтера
-- `npm lint:fix` &mdash; та ж перевірка лінтера, але з автоматичними виправленнями простих помилок
+This project includes the following features:
+
+- Create a new contact
+- Get a list of all contacts
+- Get a specific contact by ID
+- Update an existing contact
+- Delete a contact
+
+## Technologies Used
+
+This project was created using the following technologies:
+
+- JavaScript (ES6+)
+- Node.js
+- Common.js
+- Express
+- Mongoose
+- Morgan
+- Joi
+- Dotenv
+- Nodemon
+
+## Contributing
+
+Contributions to this project are welcome! To contribute, please follow these steps:
+
+1. Fork this repository
+2. Create a new branch for your changes
+3. Make your changes and commit them
+4. Push your changes to your forked repository
+5. Submit a pull request to this repository
+
+Please ensure that your changes are well-tested and follow the existing code style and best practices.
+
+## License
+
+This project is licensed under the MIT License - see the `LICENSE` file for details.
+
+## Contact
+
+If you have any questions or feedback about this project, please feel free to contact me at [yu.hamster.pl@gmail.com].
