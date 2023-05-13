@@ -38,15 +38,15 @@ This project includes the following features:
 
 This project was created using the following technologies:
 
-- JavaScript (ES6+)
-- Node.js
-- Common.js
-- Express
-- Mongoose
-- Morgan
-- Joi
-- Dotenv
-- Nodemon
+- [JavaScript (ES6+)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Node.js](https://nodejs.org/)
+- [Express](https://expressjs.com/)
+- [Mongoose](https://mongoosejs.com/)
+- [Morgan](https://github.com/expressjs/morgan)
+- [Joi](https://joi.dev/)
+- [Dotenv](https://github.com/motdotla/dotenv)
+- [Nodemon](https://nodemon.io/)
+- [Common.js](https://nodejs.org/docs/latest/api/modules.html)
 
 ## Contributing
 
