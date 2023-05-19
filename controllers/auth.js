@@ -28,11 +28,12 @@ const register = async (req, res) => {
 const login = async (req, res) => {
   const { email, password } = req.body;
   const user = await User.findOne({ email });
-  const { subscription } = user;
 
   if (!user) {
     throw HttpError(401, "Email or password is wrong");
   }
+
+  const { subscription } = user;
 
   const passwordCompare = await bcrypt.compare(password, user.password);
 
