@@ -1,4 +1,4 @@
-# nodejs-homework-rest-api
+# nodejs-rest-api
 
 This project is a backend part of a REST-API intended to work with a collection of contacts. It was created by forking the [nodejs-homework-template](https://github.com/goitacademy/nodejs-homework-template) repository.
 
